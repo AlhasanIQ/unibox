@@ -213,8 +213,8 @@ var UniBox = function() {
                         suggestLine += '<div class="unibox-extra">'+extraHtmlFilled+'</div>';
                     }
                 }
-
-                suggestLine += '<div class="unibox-ca"></div></div>';
+                // this adds some addtitional data that you can send with the api with the 'caption' attribute
+                suggestLine += '<div class="unibox-ca">'+suggest['caption']+'</div></div>';
 
                 var suggestNode = $(suggestLine);
                 suggestSet.append(suggestNode);
